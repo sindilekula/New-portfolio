@@ -1,0 +1,253 @@
+@import url("https://fonts.googleapis.com/css2?family=Fredericka+the+Great&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Rye&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Sevillana&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Special+Elite&display=swap");
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    font-family: 'Special Elite', cursive;
+}
+
+body {
+    overflow: hidden;
+    /* color: white; */
+}
+
+.container-fluid {
+    width: 100%;
+    min-height: 100vh;
+    /* background-color: #0f0b0a; */
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    height: 90px;
+    /* background-color: grey; */
+    z-index: 101;
+    line-height: 90px;
+}
+
+.logo {
+    display: flex;
+    color: grey;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 30px;
+    letter-spacing: 5px;
+    cursor: pointer;
+}
+
+b {
+    font-size: 60px;
+    font-weight: 800;
+    color: #cf305f;
+}
+
+.nav-items {
+    display: flex;
+}
+
+.nav-items li {
+    position: relative;
+    list-style-type: none;
+    margin: 0px 20px;
+}
+
+.nav-items li a {
+    text-decoration: none;
+    text-transform: capitalize;
+    letter-spacing: 5px;
+    font-size: 25px;
+    color: grey;
+
+}
+
+nav .nav-items li a::after {
+    content: '';
+    width: 0;
+    height: 3px;
+    background: #cf305f;
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    transition: 0.8s;
+}
+
+.nav-items li a:hover::after{
+    width: 100%;
+}
+
+.socials a:hover {
+    color: #cf305f;
+}
+
+.socials a {
+    color: grey;
+    font-size: 30px;
+    margin: 25px 10px;
+}
+
+.wrapper {
+    display: flex;
+    width: 100%;
+    height: calc(100vh - 90px);
+    justify-content: center;
+    align-items: center;
+    padding: 0 6%;
+    overflow: hidden;
+}
+
+.wrapper::before {
+    position: absolute;
+    content: '';
+    height: 500px;
+    width: 500px;
+    border-radius: 50%;
+    left: -10%;
+    top: 80%;
+    background: linear-gradient(45deg, #cf305f,grey);
+    animation: object 6s linear infinite;
+}
+.wrapper::after {
+    position: absolute;
+    content: '';
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+    left: 35%;
+    top: 12%;
+    background: linear-gradient(45deg, #cf305f,grey);
+    animation: object2 10s linear infinite;
+}
+@keyframes object2 {
+    50%{
+        left: 0%;
+        top: 10%;
+    }
+}
+
+.cols {
+    width: 50%;
+}
+
+.cols0 {
+    z-index: 5;
+}
+
+.top {
+    display: block;
+    position: relative;
+    font-size: 35px;
+    letter-spacing: 5px;
+    /* color: grey; */
+}
+
+.top::after {
+    position: absolute;
+    content: "";
+    height: 5px;
+    width: 50px;
+    bottom: 10px;
+    background-color: #cf305f;
+}
+
+h1 {
+    display: block;
+    font-size: 90px;
+    font-weight: 400;
+}
+
+.multitext {
+    text-transform: capitalize;
+    font-size: 55px;
+    font-weight: 600;
+    color: #cf305f;
+}
+
+p {
+    display: block;
+    width: 90%;
+    font-size: 20px;
+}
+
+.buttons {
+    width: 100%;
+    position: relative;
+    left: 120px;
+    margin: 40px;
+}
+
+.hire {
+    margin-left: 30px;
+}
+
+button {
+    box-shadow: 5px 5px 5px 5px rgba(0,0,0,0.3);
+}
+
+button .btn {
+    font-size: 30px;
+    color: white;
+    background-color: #cf305f;
+    padding: 10px 5px;
+    margin: 40px 10px;
+    letter-spacing: 3px;
+    text-transform: capitalize;
+    box-shadow: 5px 5px 5px 5px rgba(0,0,0,0.3);
+    cursor: pointer;
+    border: solid 1px black;
+}
+
+button:hover {
+    background-color: #cf305f;
+    color: white;
+    border-color: black;
+}
+
+.img-card {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.img-card #me {
+    position: relative;
+    height: 100%;
+    width: calc(130% - 100px);
+    top: -10px;
+    right: 50px;
+    animation: animateUser 3s linear infinite;
+}
+
+@keyframes animateUser {
+    50%{
+        right: 30px;
+        top: -5px;
+    }
+}
+
+.img-card #decor {
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%,-50%) rotate(-35deg);
+    width: 160%;
+    filter: saturate(200%);
+}
+/* .navbar {
+    position: fixed;
+}
+li.nav-item a {
+    color: white;
+}
+
+section {
+    min-height: 100vh;
+    background-color: #0f0b0a;
+} */
+

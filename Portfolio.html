@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/Portfolio.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <title>Sindile Portfolio</title>
+
+    <script src="https://kit.fontawesome.com/fade77b74b.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="container-fluid">
+        <nav>
+            <div class="logo">Sindile<b>!</b></div>
+            <ul class="nav-items">
+                <li><a href="">Home</a></li>
+                <li><a href="">About</a></li>
+                <li><a href="">Projects</a></li>
+                <li><a href="">Testimonials</a></li>
+            </ul>
+            <div class="socials">
+                <a href="#"><i class="fa-brands fa-github"></i></a>
+                <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                <a href="#"><i class="fa-brands fa-youtube"></i></a>
+                <!-- <a href=""><i class="fa-brands fa-linkedin"></i></a> -->
+            </div>
+        </nav>
+        <div class="wrapper">
+            <div class="cols cols0">
+                <span class="top">Hello</span>
+                <h1>I'm a <span class="multitext">Full Stack Web Developer</span></h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid veniam consectetur quibusdam fugiat fugit, temporibus rerum corporis dolore aspernatur similique modi harum exercitationem iusto deleniti alias sint sit dolorem ipsam?</p>
+                <div class="buttons">
+                    <button class="btn btn-rounded-circle">Download CV</button>
+                    <button class="btn btn-rounded-circle ms-5">Hire Me</button>
+                </div>
+            </div>
+            <div class="cols cols1">
+                <div class="img-card">
+                    <img src="./images/Untitled_design-removebg-preview.png" id="decor">
+                    <!-- <img src="./images/Sindile__2_-removebg-preview.png" id="me"> -->
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <script>
+        var typingEffect = new Typed(".multitext",{
+            strings : ["Front-end Web Developer", "UI/UX Designer", "Freelancer"],
+            loop: true,
+            typeSpeed : 100,
+            backSpeed : 80,
+            backDelay : 1500
+        })
+    </script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+</body>
+</html>
